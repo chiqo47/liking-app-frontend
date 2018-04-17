@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+ul{
+  padding: 0;
+  padding-left: 30px;
+}
+ul li{
+  list-style: none;
+  height: 30px;
+  cursor: pointer;
+  line-height: 30px;
+}
+ul li.liked:before{
+  content: '👍';
+  position: absolute;
+  margin-left: -20px;
+  margin-top: 1px;
+}
+.modal-overlay{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+}
+
+.login-window{
+  background-color: aliceblue;
+  width: 70%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  padding: 1em;
+}
+.login-window *:not(button){
+  padding: .2em;
+}
+
+button {
+    background-color: rgb(52, 109, 150);
+    border: none;
+    color: white;
+    /* padding: 15px 32px; */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    height: 40px;
+    width: 100px;
+    cursor: pointer;
+}
+button.btn-secondary{
+  border: 2px solid rgb(52, 109, 150);
+  color: rgb(52, 109, 150);
+  box-sizing: border-box;
+  background-color: unset;
+}
